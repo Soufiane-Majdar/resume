@@ -15,6 +15,18 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style type="text/css">
+           
+            a.gflag {vertical-align:middle;font-size:16px;padding:1px 0;background-repeat:no-repeat;background-image:url(//gtranslate.net/flags/16.png);}
+            a.gflag img {border:0;}
+            a.gflag:hover {background-image:url(//gtranslate.net/flags/16a.png);}
+            #goog-gt-tt {display:none !important;}
+            .goog-te-banner-frame {display:none !important;}
+            .goog-te-menu-value:hover {text-decoration:none !important;}
+            body {top:0 !important;}
+            #google_translate_element2 {display:none!important;}
+            
+         </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -36,25 +48,18 @@
               <li class="nav-item">
                 <a class="nav-link text-dark active" aria-current="page" href="#projects">projects</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark active" aria-current="page" href="#Contact">Contact</a>
-              </li>
-              <!--
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-                -->
+ 
+
+
+
+
             </ul>
             <form class="d-flex">
-              <button class="btn btn-outline-success" type="submit">Download CV</button>
+                
+           
+                <select class="btn btn btn-outline-success" onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|ar">Arabic</option><option value="en|en">English</option><option value="en|fr">French</option></select><div id="google_translate_element2"></div>
+            
+            
             </form>
           </div>
         </div>
@@ -62,14 +67,14 @@
     <!-- /NavBar -->
 
         <!-- Masthead-->
-        <header class="masthead bg-light primary text-nlack text-center" id="Accueil">
+        <header class="masthead bg-gradient text-black text-nlack text-center" id="Accueil">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/computer-and-man.png" alt="..." />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Soufiane Majdar</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">Soufiane Majdar </h1>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom divider-sm">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
@@ -112,7 +117,7 @@
                 </div>
                 <!-- CV Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                    <a class="btn btn-xl btn-outline-light" href="assets/img/Soufiane_Majdar_CV.pdf" target="_blank">
                         <i class="fas fa-download me-2"></i>
                         Download CV
                     </a>
@@ -135,8 +140,8 @@
                     <div class="col-lg-4 ms-auto">
                         <p class="lead">
                            
-                                <h3 class="text-start ms-5">General skills</h3>
-                                <br>
+                                <h4 class="text-start ms-5">General skills</h4>
+                                
                                   <div class="m-2">
                                     <span class="progress-list__skill-title">HTML</span>
                                     <div class="progress">
@@ -146,7 +151,7 @@
                                     </div>
                                   </div>
                                   <div class="m-2">
-                                    <span class="progress-list__skill-title">CSS (simple css | Bootstrap)</span>
+                                    <span class="progress-list__skill-title">CSS (Bootstrap)</span>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" >
                                             30%
@@ -154,7 +159,7 @@
                                     </div>
                                   </div>
                                   <div class="m-2">
-                                    <span class="progress-list__skill-title">JS (simple js |Reactjs | React Native)</span>
+                                    <span class="progress-list__skill-title">JS (Reactjs | React Native)</span>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
                                             60%
@@ -201,16 +206,32 @@
                                         </div>
                                     </div>
                                   </div>
-                           
+<br>
+                                  <h4 class="mb-0 text-start ms-3">languages</i></h4>
+                                  <br>
+                                  <center>
+                                      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                          
+                                              <h4 class="mb-0 small p-2 "> Arabic</h4>
+
+                                              <h4 class="mb-0 small p-2"> English</h4>
+
+                                              <h4 class="mb-0 small p-2"> French</h4>
+                                          
+                                      
+                                         
+                                      </div>
+                                    </center>
                         </p>
                     </div>
 
                     <div class="col-lg-4 me-auto">
                         <p class="lead">
  
-                            <h3 class="text-start ms-5">Education</h3>
-                            <br><br>
-                                
+                            
+                            <h4 class="mb-0 text-start ms-3">Education</i></h4>
+                                <br>
+
                                 
                                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                                         <div class="flex-grow-1">
@@ -234,7 +255,8 @@
                                     <br>
                                     <div class="d-flex flex-column flex-md-row justify-content-between">
                                         <div class="flex-grow-1">
-                                            <h4 class="mb-0 text-start ms-3">Certificates</i></h4>
+                                            <h4 class="mb-0 text-start ms-3">Certificates</i></h4> 
+
                                             <div class="subheading mb-3"><a href="https://drive.google.com/file/d/17wS6m4xWaV2T5Q-hwKJ0j_h16wQLmqCx/view" target="_blank">Excel (Microsoft Office Specialist)</a></div>
                                             <div class="subheading mb-3"><a href="https://drive.google.com/file/d/1flMyDTYUwiEjbEfJa3Zny_l4_nO7WRSl/view" target="_blank">Word (Microsoft Office Specialist)</a></div>
                                             <div class="subheading mb-3"><a href="https://drive.google.com/file/d/1ynSy5fguiEqfrlTUi8oQVsBlfjk8xL4O/view" target="_blank">Python (Microsoft Technology Associate)</a></div>
@@ -242,7 +264,7 @@
                                         </div>
                              
                                     </div>
-                            
+
                         </p>
                     </div>
                 </div>
@@ -270,62 +292,37 @@
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item mx-auto h-100" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/htmlcompiler.JPG" alt="..." />
+                            <img class="img-fluid h-100" src="assets/img/portfolio/htmlcompiler.JPG" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-item mx-auto h-100" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/QR-code.JPG" alt="..." />
+                            <img class="img-fluid h-100" src="assets/img/portfolio/QR-code.JPG" alt="..." />
                         </div>
                     </div>
-         
+                    <!-- Portfolio Item 3-->
+                             <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto h-100" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid h-100" src="assets/img/portfolio/Do_app donne.JPG" alt="..." />
+                                </div>
+                            </div>
                     
                 </div>
             </div>
         </section>
 
       
-
-        <!-- Contact Section-->
-        <section class="page-section" id="Contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-
-                        <br>
-                        <form action="https://formspree.io/f/xyyldkav" method="POST">
-                        
-                            <input placeholder="Email address"  class="form-control form-floating " type="email" name="_replyto">
-                        <br>
-                        
-                            <textarea class="form-control form-floating " placeholder="Enter your message here..." name="message"></textarea>
-                        
-
-                        <!-- your other form fields go here -->
-
-                        <button class="btn btn-primary btn-xl disabled m-2" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Footer-->
         <footer class="footer page-footer font-small text-center">
             <div class="container">
@@ -381,7 +378,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">htm editor</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">htm editor - android app</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -418,7 +415,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">QR Code Generator</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">QR Code Generator - website AI</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -428,7 +425,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/QR-code2.JPG" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">---</p>
+                                    <p class="mb-4">The project is a website wher you can generate QRcode</p>
                                     
                                     <button type="button"  class="btn btn-secondary"><a href="https://github.com/Soufiane-Majdar/qr-code" target="_blank">code source</a></button>
                                     <button type="button"  class="btn btn-secondary"><a href="https://soufiane-majdar.github.io/qr-code/"  target="_blank">
@@ -456,7 +453,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">To do - windows app</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -464,9 +461,15 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Do_app.JPG" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Doapp_non.JPG" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">The project is a Todo app for windows made with c# windows form and sql server.</p>
+                                    
+                                    <button type="button"  class="btn btn-secondary"><a href="https://drive.google.com/drive/folders/1FoOXVV7ahmJ9O6Ova-g9PBzCCTwprWr8?usp=sharing" download rel="noopener noreferrer" target="_blank">
+                                        Download 
+                                     </a></button>
+                                    <br><br>
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -484,6 +487,16 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     
+        <script type="text/javascript">
+function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}
+</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+/* ]]> */
+</script>
       
     </body>
 </html>

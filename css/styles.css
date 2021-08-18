@@ -10898,6 +10898,10 @@ html {
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
 }
+
+.divider-custom.divider-sm .divider-custom-line {
+  background-color: rgb(153, 168, 201);
+}
 .divider-custom.divider-light .divider-custom-icon {
   color: #fff;
 }
